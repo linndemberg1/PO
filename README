@@ -11,9 +11,14 @@ Aqui estão organizados os seguintes projetos da disciplina:
 
 - Orienteering Problem (OP)
 
-Trabalho referente ao Orienteering Problem, desenvolvido como projeto final da disciplina. O problema envolve a seleção de um subconjunto de vértices com o objetivo de maximizar a recompensa total, respeitando restrições de custo/tempo.
+Trabalho referente ao Orienteering Problem, desenvolvido como projeto final da disciplina. 
+O problema envolve a seleção de um subconjunto de vértices com o objetivo de maximizar a 
+recompensa total, respeitando restrições de custo/tempo.
 
  Objetivo
 
-- O objetivo deste repositório é reunir as implementações, testes e análises realizadas ao longo da disciplina de Pesquisa Operacional, consolidando os conhecimentos teóricos e práticos adquiridos.
+- O objetivo deste repositório é reunir as implementações, testes e análises realizadas ao longo da 
+disciplina de Pesquisa Operacional, consolidando os conhecimentos teóricos e práticos adquiridos.
+
+[![Assista o vídeo](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
