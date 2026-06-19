@@ -26,5 +26,4 @@ disciplina de Pesquisa Operacional, consolidando os conhecimentos teóricos e pr
 
 Clique na imagem abaixo para assistir ao vídeo:
 
-![Demonstração](https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg)
-(https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+[![Clique para assistir](https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
