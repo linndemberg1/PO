@@ -4,7 +4,7 @@ que consiste em modelar e resolver um problema de planejamento de rotas para um 
 Nesse contexto, cada vértice representa um ponto de interesse (possivelmente áreas com informação relevante ou “recompensas”),
 enquanto as arestas representam o custo de deslocamento entre esses pontos. O objetivo do algoritmo é selecionar 
 o melhor subconjunto de vértices a serem visitados, maximizando a recompensa total obtida sem 
-ultrapassar a capacidade de deslocamento/tempo do robô.
+ultrapassar a capacidade de bateria máxima disponı́vel do robô.
 
 Dessa forma, o OP se encaixa como uma abstração matemática do problema real enfrentado pelo sistema, 
 permitindo transformar decisões operacionais — como quais locais visitar e em qual ordem — em um modelo otimizado.
@@ -15,6 +15,6 @@ Em resumo, o modelo do Orienteering Problem fornece a base teórica para represe
 e resolver o problema prático proposto no projeto final da disciplina.
 
 
-Clique na imagem abaixo para assistir ao vídeo:
+Clique na imagem abaixo para assistir ao vídeo da explicação:
 
-[![Clique para assistir](https://img.youtube.com/vi/JmSwpx18NMA/maxresdefault.jpg)](https://www.youtube.com/watch?v=JmSwpx18NMA)
+[![Clique para assistir](https://img.youtube.com/vi/q47tbKmx4-8/maxresdefault.jpg)](https://www.youtube.com/watch?v=q47tbKmx4-8)
