@@ -1,5 +1,7 @@
 Trabalhos – Pesquisa Operacional
+
 Autor: José Lindenberg de Andrade
+
 Docente: Profº Drº Anand Subramanian
 
 Este repositório contém os trabalhos desenvolvidos na disciplina de Pesquisa Operacional do PPGI/UFPB, ministrada pelo professor Anand Subramanian.
