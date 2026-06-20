@@ -20,10 +20,3 @@ recompensa total, respeitando restrições de custo/tempo.
 - O objetivo deste repositório é reunir as implementações, testes e análises realizadas ao longo da 
 disciplina de Pesquisa Operacional, consolidando os conhecimentos teóricos e práticos adquiridos.
 
-
-
-- Demonstração do Projeto
-
-Clique na imagem abaixo para assistir ao vídeo:
-
-[![Clique para assistir](https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
