@@ -1,4 +1,4 @@
-Trabalhos – Pesquisa Operacional
+Trabalhos de Pesquisa Operacional
 
 Autor: José Lindenberg de Andrade
 
