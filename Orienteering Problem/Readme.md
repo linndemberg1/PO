@@ -15,6 +15,6 @@ Em resumo, o modelo do Orienteering Problem fornece a base teórica para represe
 e resolver o problema prático proposto no projeto final da disciplina.
 
 
-Clique na imagem abaixo para assistir ao vídeo da explicação:
+Clique na imagem abaixo para assistir o vídeo da explicação:
 
 [![Clique para assistir](https://img.youtube.com/vi/q47tbKmx4-8/maxresdefault.jpg)](https://www.youtube.com/watch?v=q47tbKmx4-8)
