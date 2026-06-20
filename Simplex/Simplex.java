@@ -14,7 +14,7 @@ public class Simplex {
     // Custos originais da função objetivo (c) para a fórmula do dual
     private double[] custosOriginais = {3, 5, 0, 0, 0};
 
-    // Mapeamento de qual variável está em qual linha da base
+    // Mapeamento correto dos índices (0-based): x3=2, x4=3, x5=4
     private int[] variaveisNaBase = {2, 3, 4}; 
 
     private int iteracao = 0;
@@ -52,7 +52,7 @@ public class Simplex {
             executarPivoteamento(linhaPivo, colunaPivo);
             
             System.out.println("\n>>> PASSO " + iteracao + " <<<");
-            System.out.println("Variável x" + (colunaPivo + 1) + " entra na base.");
+            System.out.println("Variável x" + (colunaPivo + 1) + " entra na base e retira x" + (variaveisNaBase[linhaPivo] + 1));
             imprimirTableau();
         }
         
@@ -85,7 +85,7 @@ public class Simplex {
         double menorRazao = Double.MAX_VALUE;
 
         for (int i = 0; i < tableau.length - 1; i++) {
-            if (tableau[i][colunaPivo] > 0) {
+            if (tableau[i][colunaPivo] > 1e-6) { // Evita divisão por zero ou números extremamente pequenos
                 double razao = tableau[i][tableau[0].length - 1] / tableau[i][colunaPivo];
                 if (razao < menorRazao) {
                     menorRazao = razao;
@@ -160,17 +160,15 @@ public class Simplex {
         System.out.println(" ANÁLISE DE SENSIBILIDADE (RANGE DE b2)");
         System.out.println("========================================");
 
-        int colFolgaInicio = 2; // começa na coluna 2 (x3)
+        int colFolgaInicio = 2; 
         int numRestricoes = 3;
 
         double[][] S = new double[numRestricoes][numRestricoes];
         double[] b_atual = new double[numRestricoes];
 
         for (int i = 0; i < numRestricoes; i++) {
-            // Ajustado de tableauPrimal para tableau
             b_atual[i] = tableau[i][tableau[0].length - 1]; 
             for (int j = 0; j < numRestricoes; j++) {
-                // Ajustado de tableauPrimal para tableau
                 S[i][j] = tableau[i][colFolgaInicio + j]; 
             }
         }
@@ -186,7 +184,7 @@ public class Simplex {
 
         System.out.println("Avaliando as inequações (S * Δb + b* >= 0):");
         for (int i = 0; i < numRestricoes; i++) {
-            double coefDelta = S[i][1]; // Coluna 1 representa a influência de b2
+            double coefDelta = S[i][1]; 
             double termoIndep = b_atual[i];
 
             System.out.printf(" Restrição %d: (%.4f) * Δb2 + %.2f >= 0", (i + 1), coefDelta, termoIndep);
@@ -206,19 +204,22 @@ public class Simplex {
         }
 
         double b2_original = 12.0;
-        double allowableDecrease = (minDeltaB2 == -Double.MAX_VALUE) ? Double.POSITIVE_INFINITY : Math.abs(minDeltaB2);
-        double allowableIncrease = (maxDeltaB2 == Double.MAX_VALUE) ? Double.POSITIVE_INFINITY : maxDeltaB2;
-
-        double b2_min = b2_original - allowableDecrease;
-        double b2_max = b2_original + allowableIncrease;
-
+        
         System.out.println("\n----------------------------------------");
         System.out.println(" CONCLUSÃO DOS LIMITES");
         System.out.println("----------------------------------------");
         System.out.printf("Intervalo de variação: %.2f <= Δb2 <= %.2f%n", minDeltaB2, maxDeltaB2);
-        System.out.printf("Aumento Permitido: %.2f%n", allowableIncrease);
-        System.out.printf("Redução Permitida: %.2f%n", allowableDecrease);
-        System.out.printf("Range permitido para b2 original (%.1f): %.2f <= b2 <= %.2f%n", b2_original, b2_min, b2_max);
+        
+        if (maxDeltaB2 == Double.MAX_VALUE) {
+            System.out.println("Aumento Permitido: Infinito");
+            System.out.printf("Range permitido para b2 original (%.1f): %.2f <= b2 <= Infinito%n", b2_original, (b2_original + minDeltaB2));
+        } else {
+            double allowableDecrease = (minDeltaB2 == -Double.MAX_VALUE) ? Double.POSITIVE_INFINITY : Math.abs(minDeltaB2);
+            double allowableIncrease = maxDeltaB2;
+            System.out.printf("Aumento Permitido: %.2f%n", allowableIncrease);
+            System.out.printf("Redução Permitida: %.2f%n", allowableDecrease);
+            System.out.printf("Range permitido para b2 original (%.1f): %.2f <= b2 <= %.2f%n", b2_original, (b2_original - allowableDecrease), (b2_original + allowableIncrease));
+        }
         System.out.println("========================================");
     }
 
