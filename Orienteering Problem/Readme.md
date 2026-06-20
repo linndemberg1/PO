@@ -14,3 +14,7 @@ segura e com melhor aproveitamento de recursos energéticos.
 Em resumo, o modelo do Orienteering Problem fornece a base teórica para representar 
 e resolver o problema prático proposto no projeto final da disciplina.
 
+
+Clique na imagem abaixo para assistir ao vídeo:
+
+[![Clique para assistir](https://img.youtube.com/vi/JmSwpx18NMA/maxresdefault.jpg)](https://www.youtube.com/watch?v=JmSwpx18NMA)
