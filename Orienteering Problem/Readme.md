@@ -14,5 +14,3 @@ segura e com melhor aproveitamento de recursos energéticos.
 Em resumo, o modelo do Orienteering Problem fornece a base teórica para representar 
 e resolver o problema prático proposto no projeto final da disciplina.
 
-O link da localização das Vítimas na Praia do Jacaré em Cabedelo/PB está 
-disponível no link: https://www.google.com/maps/d/edit?mid=1jGRCHqooxUtOV88ulq39IlgLEq179m8&usp=drive_link
