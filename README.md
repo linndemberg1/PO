@@ -4,7 +4,7 @@ Autor: José Lindenberg de Andrade
 
 Docente: Profº Drº Anand Subramanian
 
-Este repositório contém os trabalhos desenvolvidos na disciplina de Pesquisa Operacional do PPGI/UFPB, ministrada pelo professor Anand Subramanian.
+Este repositório contém os trabalhos desenvolvidos na disciplina de Pesquisa Operacional do PPGI/UFPB.
 
 Aqui estão organizados os seguintes projetos da disciplina:
 
@@ -12,13 +12,4 @@ Aqui estão organizados os seguintes projetos da disciplina:
 
 
 - Orienteering Problem (OP)
-
-Trabalho referente ao Orienteering Problem, desenvolvido como projeto final da disciplina. 
-O problema envolve a seleção de um subconjunto de vértices com o objetivo de maximizar a 
-recompensa total, respeitando restrições de custo/tempo.
-
- Objetivo
-
-- O objetivo deste repositório é reunir as implementações, testes e análises realizadas ao longo da 
-disciplina de Pesquisa Operacional, consolidando os conhecimentos teóricos e práticos adquiridos.
 
