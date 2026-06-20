@@ -13,9 +13,6 @@ Além da resolução do problema primal, o projeto calcula o problema dual por m
 * Dualidade
 * Análise de Sensibilidade
 
-## Objetivo
-
-Aplicar, na prática, os conceitos de Programação Linear, Método Simplex, problema dual e análise pós-otimização.
 
 ## Demonstração
 
