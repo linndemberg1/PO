@@ -16,6 +16,6 @@ Além da resolução do problema primal, o projeto calcula o problema dual por m
 
 ## Demonstração
 
-Assista à apresentação do projeto no YouTube:
+Clique na imagem abaixo para assistir à explicação do projeto:
 
-🔗 https://www.youtube.com/watch?v=SEU_VIDEO_AQUI
+[![Clique para assistir](https://img.youtube.com/vi/q47tbKmx4-8/maxresdefault.jpg)](https://www.youtube.com/watch?v=q47tbKmx4-8)
