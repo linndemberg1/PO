@@ -18,4 +18,4 @@ Além da resolução do problema primal, o projeto calcula o problema dual por m
 
 Clique na imagem abaixo para assistir à explicação do projeto:
 
-[![Clique para assistir](https://img.youtube.com/vi/LdQKiN7ANNI/maxresdefault.jpg)](https://www.youtube.com/watch?v=LdQKiN7ANNI)
+[![Clique para assistir](https://img.youtube.com/vi/qx57WxhJiek/maxresdefault.jpg)](https://www.youtube.com/watch?v=qx57WxhJiek)
